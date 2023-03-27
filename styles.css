@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Roboto&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    background-color: rgb(219, 219, 219);
+}
+
+.cards {
+    max-width: 1100px;
+}
+
+.card {
+    position: relative;
+    margin: 25px;
+    padding: 25px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 40px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.name {
+    font-size: 1.1em;
+}
+
+.verified {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.first-text {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.6em;
+    z-index: 2;
+}
+
+.second-text, .first-text {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.second-text {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#daniel-clifford {
+    background-color: hsl(263, 55%, 52%);
+}
+
+#daniel-clifford .header img {
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.white {
+    color: white;
+}
+
+.white50 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.white70 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+#jonathan-walters {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#jeanette-harmon {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#patrick-abrams{
+    background-color: hsl(219, 29%, 14%);
+}
+
+#patrick-abrams .header img {
+    border: 2.5px solid rgba(163, 11, 246, 0.659);
+}
+
+#kira-whittle {
+    background-color: white;
+}
+
+.dark {
+    color: hsl(217, 19%, 35%);
+}
+
+.dark50 {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.dark70 {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+.quote {
+    position: absolute;
+    z-index: 1;
+    right: 12%;
+    width: 110px;
+    top: 0;
+}
+
+@media (min-width: 576px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards {
+        display: flex;
+        margin: 5% 0%;
+    }
+
+    #left-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-top {
+        display: flex;
+        flex-direction: row;
+        flex-basis:50%
+    }
+
+    .container-bottom {
+        display: flex;
+        flex-direction: row;
+        flex-basis:50%
+    }
+    
+    #daniel-clifford {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #jonathan-walters {
+
+    }
+
+    #jeanette-harmon {
+
+    }
+
+    #patrick-abrams {
+    }
+    .card {
+        margin: 15px;
+    }
+    #kira-whittle {
+        flex-basis: 65%;
+    }
+
+}
